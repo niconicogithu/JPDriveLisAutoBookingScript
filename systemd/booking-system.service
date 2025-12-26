@@ -1,0 +1,27 @@
+[Unit]
+Description=JP Driving License Auto-Booking System
+After=network.target
+
+[Service]
+Type=simple
+User=your_username
+Group=your_groupname
+WorkingDirectory=/path/to/jp-driving-license-auto-booking
+Environment="PATH=/path/to/venv/bin:/usr/local/bin:/usr/bin:/bin"
+
+# Load environment variables from .env file
+EnvironmentFile=/path/to/jp-driving-license-auto-booking/.env
+
+# Run the main script
+ExecStart=/path/to/venv/bin/python3 main.py --headless
+
+# Restart policy
+Restart=on-failure
+RestartSec=10
+
+# Logging
+StandardOutput=append:/path/to/jp-driving-license-auto-booking/logs/systemd.log
+StandardError=append:/path/to/jp-driving-license-auto-booking/logs/systemd-error.log
+
+[Install]
+WantedBy=multi-user.target
