@@ -68,8 +68,8 @@ cp .env.example .env
 Edit `.env` with your credentials:
 ```bash
 # Required: Your Telegram bot token and chat ID
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-TELEGRAM_CHAT_ID=987654321
+TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUV
+TELEGRAM_CHAT_ID=98765
 
 # Target categories (comma-separated)
 TARGET_CATEGORIES=準中型車ＡＭ
