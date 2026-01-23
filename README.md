@@ -2,6 +2,18 @@
 
 Automated booking system for Kanagawa e-Shinsei driving license test appointments.
 
+## Quick Start
+
+```bash
+# 1. Activate virtual environment
+source venv/bin/activate
+
+# 2. Run the script
+python3 main.py
+```
+
+To stop the script, press `Ctrl+C` in the terminal.
+
 ## Features
 
 - 🔄 Continuous monitoring of available time slots
